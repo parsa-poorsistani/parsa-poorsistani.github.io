@@ -20,11 +20,13 @@
         );
       }
     </script>
+    <script src="assets/mode.js" defer></script>
     <script defer src="assets/lbox.js"></script>
     <script defer src="assets/abstract.js"></script>
 </head>
   <body>
     <header>
+          <nav>
   <!-- dark/light mode -->
     <span id="dark-mode-toggle" style="cursor: pointer">
     <svg
@@ -41,8 +43,6 @@
       ></path>
     </svg>
   </span>
-</header>
-    <nav>
     <ul class="menu">
       
       <li><a href="/">Home</a></li>
@@ -54,6 +54,7 @@
     <hr/>
     </nav>
 
+</header>
 
 <section class="bio">
   <a>
@@ -67,11 +68,6 @@ in <a href="https://pdos.csail.mit.edu/">PDOS</a></p>
 
 
     <section class="contact-wrapper">
-      
-      <a href="https://github.com/parsa-poorsistani">
-	<img src="files/github.png" alt="" class="icon"></img>
-      </a>
-      
       <a href="">
 	<img src="files/email.png" alt="" class="icon"></img>
       </a>
@@ -81,23 +77,15 @@ in <a href="https://pdos.csail.mit.edu/">PDOS</a></p>
   </section>
 </section>
 
-<!-- dark/light mode <img src="files/prof.png" style="max-width:15%;min-width:40px;float:right;" alt="Daneshvar Amrollahi"/>
---><h2 id="daneshvar-amrollahi">Parsa Poorsistani</h2>
-<p>PARSA POORSISTANI <strong>Computer Science PhD student</strong> at <strong>Stanford University</strong>, fortunate to be advised by <strong>Prof. Clark Barrett</strong> and working on the state-of-the-art SMT Solver, <a href="https://cvc5.github.io/">cvc5</a>.</p>
+    <!-- dark/light mode <img src="files/prof.png" style="max-width:15%;min-width:40px;float:right;" alt="Daneshvar Amrollahi"/> -->
+<p><strong>Computer Science PhD student</strong> at <strong>Stanford University</strong>, fortunate to be advised by <strong>Prof. Clark Barrett</strong> and working on the state-of-the-art SMT Solver, <a href="https://cvc5.github.io/">cvc5</a>.</p>
 <p>Before my time at Stanford, I engaged in research internships at TU Wien, EPFL and ETH Zurich.
 At TU Wien, with Prof. Laura Kovács and Prof. Ezio Bartocci, I extended previous techniques in polynomial loop invariant generation to handle a broader set of loops labeled as <em>Unsolvable</em>. I implemented the theory in the probabilistic loop analyzer <a href="https://github.com/probing-lab/polar">POLAR</a> and the work was recognized with the <a href="https://staticanalysis.org/#award"><strong>Radhia Cousot Young Researcher Best Paper Award</strong></a> at SAS 2022.
 Also, we introduced a framework for synthesizing recursive programs, using induction on algebraic data types. I implemented our theory in the <a href="https://github.com/vprover/vampire/tree/synthesis-recursive">Vampire</a> automated theorem prover. This work is currently under review at a top-tier venue.
 At EPFL, with Prof. George Candea, I developed an interest in systems research (computer networks, operating systems, distributed systems). I integrated Z3&rsquo;s support for quantifiers in first-order logic into the KLEE symbolic execution engine codebase. This enhancement boosted the scalability of a network verification approach using symbolic execution by mitigating the path explosion problem due to loops. At ETH Zurich, I worked on verifying initialization code in Golang by viewing it as a concurrency problem.</p>
 <p>Shoot me an email if you&rsquo;re interested in chatting!</p>
 
-<script src="/assets/js/mode.js" defer></script>
 
-    </main>
-    <section id="category-modal-bg"></section>
-<section id="category-modal">
-  <h1 id="category-modal-title"></h1>
-  <section id="category-modal-content"></section>
-</section>
   <footer>
   <script defer src="//yihui.org/js/math-code.js"></script>
 <script defer src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
