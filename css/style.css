@@ -29,6 +29,15 @@ header nav {
   border-radius: 5px;
 }
 .menu, .article-meta, footer { text-align: center; }
+ul {
+    list-style-type: disc; /* Adds bullets to list items */
+    margin-left: 30px; /* Indents list from the left */
+    padding-left: 0; /* Ensures list does not have extra padding */
+}
+
+li {
+    margin-bottom: 5px; /* Adds space between list items */
+}
 /** Remove the margin in all browsers (opinionated). */
 body { margin: 0; }
 /* HTML5 display definitions ========================================================================== */

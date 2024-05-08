@@ -1,1 +1,95 @@
-HELLo world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="generator" content="Hugo 0.92.2" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Parsa</title>
+    <link rel="shortcut icon" href="../files/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../files/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/syntax.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script>
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.documentElement.setAttribute(
+          "data-theme",
+          localStorage.getItem("theme")
+        );
+      }
+    </script>
+    <script src="../assets/mode.js" defer></script>
+    <script defer src="../assets/lbox.js"></script>
+    <script defer src="../assets/abstract.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- toggle for dark/light mode -->
+            <span id="dark-mode-toggle" style="cursor: pointer">
+                <svg stroke="currentcolor" fill="currentcolor" stroke-width="0" viewbox="0 0 16 16" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m8 1a7 7 0 1 0 0 14a7 7 0 0 0 8 1zm0 13v2a6 6 0 1 1 0 12z"></path>
+                </svg>
+            </span>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../publications/index.html">Publications</a></li>
+            </ul>
+            <hr/>
+        </nav>
+    </header>
+    <section>
+  <article class="publications">
+    <h1 class="header">Publications</h1>
+
+        <section class="publication">
+          <h2 class="publication-title">
+	<a href="../files/LEAD.pdf">LEAD: Latency-Efficient Application Deployment for Microservices Architecture</a>
+      </h2>
+      <section class="authors">
+	
+	
+	<small>Mohammad-Ali Mirzaei, </small>
+	
+	
+	
+	<small>Parsa Poorsistani, </small>
+	
+	
+	
+	<small>and Seyyed Ahmad Javadi</small>
+	
+	
+      </section>
+      <small class="conference">ICAC '24</small>
+      <section class="abstract_button">
+	Abstract
+      </section>
+      <section class="abstract">
+	
+	<hr />
+
+<h2 id="abstract">Abstract</h2>
+
+<p>In cloud computing, microservices architecture has become the preferred choice for many applications. Accordingly, several small and decoupled containerized services hosted on different servers communicate through the network. Therefore, communication latency significantly impacts end-to-end latency. Kubernetes, the de facto standard for container orchestration, cannot reduce this overhead due to its lack of awareness of service interactions. 
+
+              We present LEAD, a Latency-Efficient Application Deployment framework that integrates with Kubernetes without modifying its core components. LEAD considers the inter-service relationships and resource constraints, improving service placement to reduce end-to-end latency. The idea behind LEAD is straightforward: keep the cooperating services close to each other to exploit faster in-node communication and automate this process. The proposed idea is realized by leveraging a scoring algorithm and monitoring framework to achieve dynamic improvement of service placement. Our experimental results show an average 20% improvement in the 99<sup>th</sup> percentile latency compared to Kubernetes default scheduler.</p>
+
+      </section>
+    </section>
+    
+  </article>
+</section>
+
+    <footer>
+        <hr/>
+        <a href="https://github.com/parsa-poorsistani">GitHub</a> | <a href="https://scholar.google.com/">Google Scholar</a> | <a href="https://twitter.com/prxaps">Twitter</a>
+    </footer>
+</body>
+
+</html>
