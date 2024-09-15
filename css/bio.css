@@ -37,18 +37,22 @@
 
 .bio .bio-wrapper .contact-wrapper img {
     width: auto;
-    max-width: 2rem; /* You can adjust this value to control the size */
-    height: 2rem; /* Ensures the image stays at 2rem */
+    max-width: 1.7rem;
+    height: 1.7rem;
     margin-right: 0.5rem;
-    vertical-align: middle;
+    vertical-align: top;
+    position: relative;
+    top: 0.0rem; 
 }
 
 @media (max-width: 600px) {
     .bio .bio-wrapper .contact-wrapper img {
-        max-width: 1.8rem; /* Reduce the size slightly on smaller screens */
+        max-width: 1.8rem;
         height: 1.8rem;
+        top: 0.1rem; 
     }
 }
+
 
 
 .bio .bio-wrapper .contact-wrapper p {
