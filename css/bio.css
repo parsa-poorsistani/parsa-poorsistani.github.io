@@ -36,19 +36,20 @@
 }
 
 .bio .bio-wrapper .contact-wrapper img {
-    width: 100%;
-    max-width: 2rem; /* This ensures the image does not exceed this size */
-    height: auto; /* Maintains aspect ratio */
+    width: auto;
+    max-width: 2rem; /* You can adjust this value to control the size */
+    height: 2rem; /* Ensures the image stays at 2rem */
     margin-right: 0.5rem;
     vertical-align: middle;
 }
 
-/* Additional styles for smaller screens */
 @media (max-width: 600px) {
     .bio .bio-wrapper .contact-wrapper img {
-        max-width: 1.5rem; /* Reduces size on small screens */
+        max-width: 1.8rem; /* Reduce the size slightly on smaller screens */
+        height: 1.8rem;
     }
 }
+
 
 .bio .bio-wrapper .contact-wrapper p {
     margin-right: 0.5rem;
