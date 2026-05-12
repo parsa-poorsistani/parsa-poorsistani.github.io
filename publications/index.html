@@ -57,6 +57,34 @@
     </nav>
 
 </header>
+            <section class="publication">
+          <h2 class="publication-title">
+            <a href="../files/GraphFlash.pdf">GraphFlash: Enabling Fast and Elastic Graph Processing on Serverless Infrastructure</a>
+          </h2>
+          <section class="authors">
+            <small>Chen Zhao, </small>
+            <small>Parsa Poorsistani, </small>
+            <small>Mohammad Goudarzi, </small>
+            <small>Tawfiq Islam </small>
+            <small>and Adel N. Toosi</small>
+          </section>
+          <small class="conference">ICDCS '26</small>
+          <section class="abstract_button">
+            Abstract
+          </section>
+          <section class="abstract">
+
+            <hr />
+
+<h2 id="abstract">Abstract</h2>
+
+<p>Graph processing systems are essential for analyzing large-scale data with complex relationships, yet most existing frameworks rely on statically provisioned clusters, resulting in poor elasticity and inefficient resource utilization under dynamic workloads. Serverless computing offers automatic scaling and fine-grained billing, but existing serverless graph systems suffer from performance limitations due to inefficient state management and high communication overhead through external storage.
+
+              We present GraphFlash, a fast and elastic graph processing framework built on serverless infrastructure. GraphFlash adopts a subgraph-centric programming model and leverages shared external storage for coordination and communication, enabling stateless, fine-grained function execution. It supports two execution modes: rotating mode for resource-constrained environments and pinned mode for higher performance when resources are sufficient. To address serverless limitations, GraphFlash introduces system-level optimizations, including partition-aware key aggregation, intra-function partition co-location, and superstep-aware activation. Across multiple graph algorithms and datasets, GraphFlash outperforms existing serverless-compatible systems by up to 127× in execution time and reduces resource consumption by up to 98% under higher-resource configurations, while matching the performance of traditional distributed frameworks on large workloads. Even with limited resources, it achieves up to 48× speedup and 99.97% cost reduction over prior serverless solutions, demonstrating that GraphFlash makes serverless graph processing practical and performant.</p>
+
+          </section>
+        </section>
+
     <section>
   <article class="publications">
     <h1 class="header">Publications</h1>
